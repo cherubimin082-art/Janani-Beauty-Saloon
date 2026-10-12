@@ -3,14 +3,14 @@
    ===================================================== */
 const CONFIG = {
   name: 'Janani Beauty Saloon',
-  phone: '+910000000000',            // TODO: real number with country code, no spaces
-  phoneDisplay: '+91 00000 00000',   // TODO: number as shown on the site
-  whatsapp: '910000000000',          // TODO: WhatsApp number, digits only
+  phone: '+917010760076',
+  phoneDisplay: '+91 70107 60076',
+  whatsapp: '917010760076',
   whatsappMessage: 'Hi Janani Beauty Saloon, I would like to book an appointment.',
   email: 'info@jananibeautysaloon.com', // TODO
-  address: 'Madurai Road, Opp. Indian Petrol Bunk,\nBegampur, Dindigul, Tamil Nadu 624002', // TODO: confirm
+  address: 'No 2, Muthu Saravanan Complex,\nOpposite to DABC Orchid Apartment,\nPolachery, Tamil Nadu 600127',
   hours: 'Monday – Sunday\n10:00 AM – 8:00 PM', // TODO: confirm
-  mapsQuery: 'Janani Beauty Saloon, Madurai Road, Begampur, Dindigul 624002',
+  mapsQuery: 'Janani Beauty Saloon, Muthu Saravanan Complex, Polachery, Tamil Nadu 600127',
   instagram: '#',
   facebook: '#',
 };
@@ -35,11 +35,6 @@ document.querySelectorAll('[data-link]').forEach(el => {
 document.getElementById('mapFrame').src =
   `https://maps.google.com/maps?q=${encodeURIComponent(CONFIG.mapsQuery)}&output=embed`;
 document.getElementById('year').textContent = new Date().getFullYear();
-
-/* ---------- Preloader ---------- */
-window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('preloader').classList.add('hide'), 600);
-});
 
 /* ---------- Header + back-to-top + active nav ---------- */
 const header = document.getElementById('header');

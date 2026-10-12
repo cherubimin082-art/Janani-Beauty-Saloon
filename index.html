@@ -13,12 +13,6 @@
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div class="preloader" id="preloader">
-    <div class="loader-ring"></div>
-    <span class="loader-text" data-config="name">Janani Beauty Saloon</span>
-  </div>
-
   <!-- Floating petals -->
   <div class="petals" aria-hidden="true"></div>
 
@@ -74,29 +68,27 @@
       </div>
     </div>
     <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
-  </section>
-
-  <!-- Marquee -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Hair Styling</span><i class="fa-solid fa-star"></i>
-      <span>Facials</span><i class="fa-solid fa-star"></i>
-      <span>Bridal Makeup</span><i class="fa-solid fa-star"></i>
-      <span>Threading</span><i class="fa-solid fa-star"></i>
-      <span>Waxing</span><i class="fa-solid fa-star"></i>
-      <span>Mehendi</span><i class="fa-solid fa-star"></i>
-      <span>Hair Colouring</span><i class="fa-solid fa-star"></i>
-      <span>Manicure &amp; Pedicure</span><i class="fa-solid fa-star"></i>
-      <span>Hair Styling</span><i class="fa-solid fa-star"></i>
-      <span>Facials</span><i class="fa-solid fa-star"></i>
-      <span>Bridal Makeup</span><i class="fa-solid fa-star"></i>
-      <span>Threading</span><i class="fa-solid fa-star"></i>
-      <span>Waxing</span><i class="fa-solid fa-star"></i>
-      <span>Mehendi</span><i class="fa-solid fa-star"></i>
-      <span>Hair Colouring</span><i class="fa-solid fa-star"></i>
-      <span>Manicure &amp; Pedicure</span><i class="fa-solid fa-star"></i>
+    <!-- Animated waves -->
+    <div class="hero-waves" aria-hidden="true">
+      <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✧</span>
+      <span class="sparkle s4">✦</span><span class="sparkle s5">✧</span><span class="sparkle s6">✦</span>
+      <svg viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+          <linearGradient id="waveGrad" x1="0" x2="1">
+            <stop offset="0" stop-color="#d6336c" />
+            <stop offset="1" stop-color="#9c36b5" />
+          </linearGradient>
+        </defs>
+        <g class="wave-layers">
+          <use href="#wave" x="48" y="0" fill="url(#waveGrad)" opacity=".35" />
+          <use href="#wave" x="48" y="3" fill="#f3d491" opacity=".45" />
+          <use href="#wave" x="48" y="5" fill="url(#waveGrad)" opacity=".6" />
+          <use href="#wave" x="48" y="7" fill="#ffffff" />
+        </g>
+      </svg>
     </div>
-  </div>
+  </section>
 
   <!-- About -->
   <section class="section about" id="about">
