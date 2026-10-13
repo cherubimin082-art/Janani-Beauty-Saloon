@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Janani Beauty Saloon | Hair · Skin · Bridal Makeup</title>
   <meta name="description" content="Janani Beauty Saloon – hair styling, facials, threading, waxing, bridal & party makeup, mehendi and more. Book your appointment today." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Great+Vibes&family=Cinzel:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,7 +21,7 @@
   <header class="header" id="header">
     <div class="container nav-wrap">
       <a href="#home" class="logo">
-        <span class="logo-mark">J</span>
+        <img src="images/logo.png" alt="Janani Beauty Saloon logo" class="logo-mark" />
         <span class="logo-text"><b>Janani</b><small>Beauty Saloon</small></span>
       </a>
       <nav class="nav" id="nav">
@@ -38,6 +39,7 @@
   <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-bg"></div>
+    <div class="hero-dust" aria-hidden="true"></div>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="container hero-grid">
@@ -48,12 +50,13 @@
         <p class="hero-sub reveal delay-3">Expert hair care, glowing skin treatments, flawless bridal makeup and more, done by caring hands in a clean, relaxing space.</p>
         <div class="hero-btns reveal delay-4">
           <a href="#" class="btn btn-gold" data-link="whatsapp" target="_blank" rel="noopener"><i class="fa-regular fa-calendar-check"></i> Book Appointment</a>
-          <a href="#" class="btn btn-outline" data-link="phone"><i class="fa-solid fa-phone"></i> Call Us</a>
+          <a href="#" class="btn btn-outline-gold" data-link="phone"><i class="fa-solid fa-phone"></i> Call Us</a>
         </div>
-        <ul class="badges reveal delay-5">
-          <li><i class="fa-solid fa-award"></i> Trained Beauticians</li>
-          <li><i class="fa-solid fa-leaf"></i> Quality Products</li>
-          <li><i class="fa-solid fa-shield-heart"></i> Hygienic &amp; Safe</li>
+        <ul class="brand-row reveal delay-5">
+          <li><i class="fa-solid fa-scissors"></i><span>Hair</span></li>
+          <li><i class="fa-solid fa-spa"></i><span>Skin</span></li>
+          <li><i class="fa-solid fa-hand-sparkles"></i><span>Nails</span></li>
+          <li><i class="fa-solid fa-eye"></i><span>Makeup</span></li>
         </ul>
       </div>
       <div class="hero-visual reveal delay-2">
@@ -74,17 +77,12 @@
       <span class="sparkle s4">✦</span><span class="sparkle s5">✧</span><span class="sparkle s6">✦</span>
       <svg viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
-          <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
-          <linearGradient id="waveGrad" x1="0" x2="1">
-            <stop offset="0" stop-color="#d6336c" />
-            <stop offset="1" stop-color="#9c36b5" />
-          </linearGradient>
-        </defs>
+          <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />        </defs>
         <g class="wave-layers">
-          <use href="#wave" x="48" y="0" fill="url(#waveGrad)" opacity=".35" />
-          <use href="#wave" x="48" y="3" fill="#f3d491" opacity=".45" />
-          <use href="#wave" x="48" y="5" fill="url(#waveGrad)" opacity=".6" />
-          <use href="#wave" x="48" y="7" fill="#ffffff" />
+          <use href="#wave" x="48" y="0" fill="#d9b45c" opacity=".25" />
+          <use href="#wave" x="48" y="3" fill="#1f8a66" opacity=".45" />
+          <use href="#wave" x="48" y="5" fill="#d9b45c" opacity=".55" />
+          <use href="#wave" x="48" y="7" fill="#fdfaf2" />
         </g>
       </svg>
     </div>
@@ -254,9 +252,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="#home" class="logo light">
-          <span class="logo-mark">J</span>
-          <span class="logo-text"><b>Janani</b><small>Beauty Saloon</small></span>
+        <a href="#home" class="footer-badge">
+          <img src="images/logo-badge.png" alt="Janani Beauty Salon – Hair, Skin, Nails, Makeup" />
         </a>
         <p class="footer-about">Your neighbourhood destination for hair, skin, bridal and beauty care.</p>
         <div class="socials">

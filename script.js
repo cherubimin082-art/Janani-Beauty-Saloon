@@ -114,6 +114,20 @@ const restart = () => { clearInterval(timer); timer = setInterval(() => goTo((sl
 goTo(0);
 restart();
 
+/* ---------- Rising gold dust (hero) ---------- */
+const dust = document.querySelector('.hero-dust');
+for (let i = 0; i < 28; i++) {
+  const d = document.createElement('span');
+  d.className = 'dust';
+  const size = 2 + Math.random() * 4;
+  d.style.width = d.style.height = size + 'px';
+  d.style.left = Math.random() * 100 + '%';
+  d.style.setProperty('--sway', (Math.random() * 80 - 40) + 'px');
+  d.style.animationDuration = 9 + Math.random() * 10 + 's';
+  d.style.animationDelay = -Math.random() * 18 + 's';
+  dust.appendChild(d);
+}
+
 /* ---------- Falling petals ---------- */
 const petals = document.querySelector('.petals');
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
